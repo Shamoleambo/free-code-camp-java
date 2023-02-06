@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		String scanned = sc.next();
+		String s = sc.nextLine();
 		
-		System.out.println(scanned);
+		System.out.println(s.equals("Tiago"));
+		
 	}
 
 }
