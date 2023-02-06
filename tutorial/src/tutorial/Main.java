@@ -1,33 +1,34 @@
 package tutorial;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// A set cannot contain the same element twice
-		Set<Integer> t = new HashSet<Integer>();
-		t.add(1);
-		t.add(1);
-		t.add(2);
-		t.add(3);
-		t.add(5);
-		t.add(8);
-		t.add(9);
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		arrayList.add(1);
+		arrayList.add(1);
+		arrayList.add(2);
+		arrayList.add(3);
+		arrayList.add(5);
+		arrayList.add(8);
 
-		System.out.println(t);
-		System.out.printf("The size of the set t is: %d%n", t.size());
-		System.out.println(t.contains(5));
-		System.out.println(t.contains(4));
+		System.out.println(arrayList);
+		System.out.println(arrayList.get(0));
+		System.out.println(arrayList.get(1));
+		System.out.println(arrayList.get(3));
 
-		t.remove(9);
-		System.out.println(t);
+		System.out.println(arrayList.size());
+		arrayList.set(4, 123);
+//		arrayList.set(6, 13); ==> Not possible, the index must be initialized in order to use set function
+		System.out.println(arrayList);
 
-		t.clear();
-		System.out.println(t);
+		System.out.println(arrayList.isEmpty());
 
-		System.out.println(t.isEmpty());
-		System.out.printf("The size of the set t now is: %d%n", t.size());
+		// Last paramather is non inclusive
+		System.out.println(arrayList.subList(0, 3));
+
+		arrayList.clear();
+		System.out.println(arrayList);
 	}
 }
