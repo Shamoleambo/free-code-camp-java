@@ -1,34 +1,20 @@
 package tutorial;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
 	public static void main(String[] args) {
-		ArrayList<Integer> arrayList = new ArrayList<Integer>();
-		arrayList.add(1);
-		arrayList.add(1);
-		arrayList.add(2);
-		arrayList.add(3);
-		arrayList.add(5);
-		arrayList.add(8);
+		// HashMap doesn't retain the order;
+		// Cannot have two of the same keys, but you can have two of the same values;
+		// It is a very fast data set because doesn't care about order
+		Map m = new HashMap();
+		m.put("mano", "top G");
+		m.put("truta", 2);
+		m.put("tiu", 3);
+		m.put("fulano", "putinha");
 
-		System.out.println(arrayList);
-		System.out.println(arrayList.get(0));
-		System.out.println(arrayList.get(1));
-		System.out.println(arrayList.get(3));
-
-		System.out.println(arrayList.size());
-		arrayList.set(4, 123);
-//		arrayList.set(6, 13); ==> Not possible, the index must be initialized in order to use set function
-		System.out.println(arrayList);
-
-		System.out.println(arrayList.isEmpty());
-
-		// Last paramather is non inclusive
-		System.out.println(arrayList.subList(0, 3));
-
-		arrayList.clear();
-		System.out.println(arrayList);
+		System.out.println(m);
 	}
 }
