@@ -2,8 +2,8 @@ package tutorial;
 
 public class Cat {
 
-	private String name;
-	private int age;
+	public String name;
+	public int age;
 
 	public Cat(String name, int age) {
 		this.name = name;

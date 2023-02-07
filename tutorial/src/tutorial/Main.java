@@ -9,8 +9,10 @@ public class Main {
 		Cat arrois = new Cat("arrois", 7);
 		arrois.speak();
 
-		System.out.println(maninho.getAge());
-		maninho.setAge(5);
-		System.out.println(maninho.getAge());
+		Dog mano = new Dog("Mano", 1, true);
+		mano.speak();
+
+		Dog falus = new Dog("falus", 6, false);
+		falus.speak();
 	}
 }
