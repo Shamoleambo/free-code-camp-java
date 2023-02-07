@@ -2,12 +2,15 @@ package tutorial;
 
 public class Cat {
 
+	protected static int count = 0;
+
 	public String name;
 	public int age;
 
 	public Cat(String name, int age) {
 		this.name = name;
 		this.age = age;
+		Cat.count += 1;
 	}
 
 	public void speak() {

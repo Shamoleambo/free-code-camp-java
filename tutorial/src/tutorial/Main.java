@@ -3,16 +3,11 @@ package tutorial;
 public class Main {
 
 	public static void main(String[] args) {
-		Cat maninho = new Cat("maninho", 4);
-		maninho.speak();
+		Cat mano = new Cat("mano", 12);
 
-		Cat arrois = new Cat("arrois", 7);
-		arrois.speak();
+		System.out.println(mano.count);
 
-		Dog mano = new Dog("Mano", 1, true);
-		mano.speak();
-
-		Dog falus = new Dog("falus", 6, false);
-		falus.speak();
+		Cat truta = new Cat("truta", 11);
+		System.out.println(truta.count);
 	}
 }
