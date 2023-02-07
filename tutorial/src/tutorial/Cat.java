@@ -24,4 +24,8 @@ public class Cat {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String toString() {
+		return "Cat: " + this.name;
+	}
 }
