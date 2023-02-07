@@ -25,6 +25,7 @@ public class Car implements Vehicle {
 	}
 
 	public void display() {
-		System.out.printf("Gear: %d / Speed: %dKm/h", this.gear, this.speed);
+		System.out.printf("Gear: %d / Speed: %dKm/h%n", this.gear, this.speed);
+		out();
 	}
 }
